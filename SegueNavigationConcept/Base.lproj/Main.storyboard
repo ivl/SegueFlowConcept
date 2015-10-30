@@ -17,8 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjq-Zi-n2f">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjq-Zi-n2f">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFv-Xm-K5Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KFv-Xm-K5Z" firstAttribute="top" secondItem="yjq-Zi-n2f" secondAttribute="top" id="690-aa-Uy2"/>
+                                    <constraint firstAttribute="bottom" secondItem="KFv-Xm-K5Z" secondAttribute="bottom" id="8Gy-tn-OdC"/>
+                                    <constraint firstAttribute="trailing" secondItem="KFv-Xm-K5Z" secondAttribute="trailing" id="zQW-ub-JM4"/>
+                                    <constraint firstItem="KFv-Xm-K5Z" firstAttribute="leading" secondItem="yjq-Zi-n2f" secondAttribute="leading" id="zbP-oA-yZP"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
